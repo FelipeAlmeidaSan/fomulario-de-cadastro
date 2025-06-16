@@ -12,17 +12,31 @@
 </head>
 
 <body>
-    <section class="form">
-        <h1>Create a new account</h1>
+    <section class="container">
+        <h1>Formulário de Cadastro</h1>
         <form action="#">
-            <h2>Texto aqui</h2>
-            <input type="text">
-            <label for="">Fist name</label>
 
-            <input type="text">
-            <label for="">Last name</label>
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message" placeholder="Digite algo sobre você" rows="5" required></textarea>
+
+            </div>
 
 
+
+
+            <button type="submit">Enviar formulário</button>
 
         </form>
     </section>
